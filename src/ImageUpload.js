@@ -11,9 +11,11 @@ import firebase from "firebase/compat/app";
 
 const ImageUpload = ({ username }) => {
   const [image, setImage] = useState(null);
-  const [url, setUrl] = useState("");
+  const [, setUrl] = useState("");
   const [progress, setProgress] = useState(0);
   const [caption, setCaption] = useState("");
+
+    
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
